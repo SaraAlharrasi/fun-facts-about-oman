@@ -1,0 +1,129 @@
+body{
+    background-color: #eef4ed;
+}
+.container{
+    display: grid;
+    grid-template-columns: 500px 500px ;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-gap: 50px;
+    justify-content: center;
+    grid-template-areas:
+    "hd hd "
+    "cnt cnt"
+    "cnt cnt "
+    "cnt cnt "
+    "cnt cnt "
+    "cnt cnt" 
+    "btn btn "
+    "ft ft";
+}
+.box{
+    border-radius: 10px;
+}
+
+
+.hd{
+    grid-area:hd;
+    text-align: center;
+    font-size: 55px;
+    margin-top: 150px;
+    color: #0b2545;
+    font-family: "Nerko One", cursive;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 30px;
+}
+.ft{
+    grid-area: ft;
+    background-color:#8da9c4; 
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-family:"Ubuntu", sans-serif;
+    color: #0b2545;
+
+}
+.btn{
+    grid-area: btn;
+    background-color: #13315c;
+    font-family: inherit;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 40px;
+    border: none;
+    color:  #eef4ed;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+}
+.btn a{
+    color: #eef4ed;
+    font-family: inherit;
+    text-decoration: none;
+}
+.btn a:hover{
+    color:  #0b2545;
+}
+.btn:hover {
+    background-color: #8da9c4;
+}
+img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+img:hover{
+    border: solid 5px #0b2545;
+}
+figcaption{
+    font-family: "Nerko One", cursive;
+    color: #0b2545;
+    text-align: center;
+}
+@media(max-width:1000px){
+    body{
+        text-align: center;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 300px  ;
+        grid-template-rows: 190px 190px 190px 190px 190px 190px 190px 190px 190px 190px ;
+        grid-gap: 50px;
+        justify-content: center;
+        grid-template-areas:
+        "hd "
+        "cnt"
+        "cnt "
+        "cnt"
+        "cnt"
+        "cnt"
+        "cnt"
+        "cnt "
+        "cnt"
+        "cnt"
+        "cnt"
+        "btn "
+        "ft";
+    }
+    .hd{
+        grid-area: hd;
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        color: #0b2545;
+        font-family: "Nerko One", cursive;
+        font-weight: bold;
+        width: 300px;
+        text-align: center;
+    }
+    img{
+        width: 250px;
+        height: 190px;
+        border-radius: 10px;
+    }
+    .btn{
+        width:230px;
+        font-size: 19px;
+    }
+
+}

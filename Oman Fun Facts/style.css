@@ -1,0 +1,142 @@
+
+body{
+    background-color: #eef4ed;
+}
+.container{
+    display: grid;
+    grid-template-columns: 500px 500px ;
+    grid-template-rows: 250px 250px 250px 250px 250px 250px;
+    grid-gap: 50px;
+    justify-content: center;
+    grid-template-areas:
+    "hd hd "
+    "cnt cnt"
+    "cnt cnt"
+    "cnt cnt"
+    "cnt cnt"
+    "cnt cnt"  
+    "btn btn "
+    "ft ft";
+}
+
+.box{
+    background-color: #8da9c4;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+}
+.hd{
+    grid-area: hd;
+    text-align: center;
+    font-size: 100px;
+    margin-top: 150px;
+    color: #0b2545;
+    font-family: "Nerko One", cursive;
+    font-weight: bold;
+}
+.ft{
+    grid-area: ft;
+    background-color:#8da9c4; 
+    text-align: center;
+    border-radius: 5px;
+    font-family:"Ubuntu", sans-serif;
+}
+.btn{
+    grid-area: btn;
+    background-color: #13315c;
+    font-family: inherit;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 40px;
+    border: none;
+    color:  #eef4ed;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+}
+
+h2{
+    color: #0b2545;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "SUSE", sans-serif;
+}
+
+.box p{
+    color: #13315c;
+    font-family: "SUSE", sans-serif;
+    font-size: 20px;
+    width: 450px;
+    margin-top: -1.5px;
+
+}
+
+span, a{
+    color: #13315c;
+    font-family: "SUSE", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn a{
+    color: #eef4ed;
+    font-family: inherit;
+    text-decoration: none;
+}
+.btn a:hover{
+    color:  #0b2545;
+}
+.btn:hover {
+    background-color: #8da9c4;
+}
+.box:hover{
+    border: solid 5px #0b2545;
+}
+@media(max-width:600px){
+    .container{
+        display: grid;
+        grid-template-columns: 250px ;
+        grid-template-rows: 190px 190px 190px 190px 190px 190px 190px 190px 190px 190px ;
+        grid-gap: 50px;
+        justify-content: center;
+        grid-template-areas:
+        "hd "
+        "cnt"
+        "cnt "
+        "cnt"
+        "cnt"
+        "cnt"
+        "cnt"
+        "cnt "
+        "cnt"
+        "cnt"
+        "cnt"
+        "btn "
+        "ft";
+    }
+    .hd{
+        font-size: 50px;
+        margin-top: 50px;
+        width: 250px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .box p{
+        font-size: 15px;
+        width: 170px;
+        margin-top: -2px;
+    }
+    span, a{
+        font-size: 15px;
+    }
+    .btn{
+        width:230px;
+        font-size: 19px;
+    }
+
+
+}
